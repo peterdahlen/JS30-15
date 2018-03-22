@@ -60,7 +60,7 @@
     const index = el.dataset.index;
     items [index].done = !items[index].done;
     localStorage.setItem('items', JSON.stringify(items));
-    opulateList(items, itemsList);
+    populateList(items, itemsList);
   } 
 
   addItems.addEventListener('submit', addItem);
